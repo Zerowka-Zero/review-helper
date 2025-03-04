@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Review helper",
+  "version": "0.0.1",
+  "description": "Окно с чекбоксами для добавления ошибок ученика по номеру задания",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://admin.kata.academy/mentor/review/code/*"],
+      "js": ["errors.js","content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
